@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-       String Name = "Вася";
+       String Name = "Вася1";
        System.out.println("Hello World " + Name);
        int firstNumber = 0, secondNumber = 0;
        int sum;
