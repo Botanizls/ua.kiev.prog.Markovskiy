@@ -12,6 +12,7 @@ public class Main {
         System.out.println("Введите имя");
         Name = nm.nextLine();
         System.out.println("Hello World " + Name);
+
         ///Задача 3, 4
         int firstNumber = 0, secondNumber = 0;
         int sum;
@@ -22,6 +23,7 @@ public class Main {
         secondNumber = scn.nextInt();
         sum = firstNumber + secondNumber;
         System.out.println(firstNumber + "+" + secondNumber + "=" + sum);
+
         ///Задача 5
         int i = 0;
         System.out.println(i);
@@ -29,11 +31,13 @@ public class Main {
         System.out.println(i);
         i = i++;
         System.out.println(i);
+
         ///Задача 6, 7
         boolean bar = true;
         System.out.println("!" + bar);
         boolean bar2 = false;
         System.out.println("!" + bar2);
+
         ///Задача 8 - 13
         boolean a = true;
         boolean b = false;
@@ -49,6 +53,7 @@ public class Main {
         System.out.println(x);
         x = a &= b;
         System.out.println(x);
+
         ///Задача 14
         char ch1, ch2, ch3, ch4;
         ch1 = 74;
@@ -56,6 +61,7 @@ public class Main {
         ch3 = 118;
         ch4 = 97;
         System.out.println(ch1+""+ch2+""+ch3+""+ch4);
+
         ///Задача 15
         int x1 = 13;
         int y1 = 1;
@@ -68,12 +74,14 @@ public class Main {
         int z2 = 1;
 
         System.out.println("!"+(x2>y2&&y2>z2));
+
         ///Задача 2,3
         double d = 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1 + 0.1;
         System.out.println(d);
 
         float f  = 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f + 0.1f;
         System.out.println(f);
+
         ///Задача 4, 5
         int aa = 3;
         int bb = 5;
@@ -85,19 +93,40 @@ public class Main {
         int a = 2;
         int v = ++a + ++a * ++a;
         System.out.println(v);
+        ///Задача 7
+        System.out.println("Total: "+3 +4);
+        ///Задача 8
+        System.out.println(12%3);
+        ///Задача 9
+        System.out.println(13%3);
+        ///Задача 10
+        System.out.println(Byte.MAX_VALUE);
+        ///Задача 11
+        System.out.println(Short.SIZE);
+        ///Задача 12
+        System.out.println(Integer.MIN_VALUE);
 
+        ///Задача 13
+        for (int i = 0; i<=10; i++){
+            System.out.println(i);
+        }
 
+        ///Задача 14
+        for(int i = 1; i < 10; i++){
+            for(int g = 1; g < 10; g++){
+                System.out.print(g * i + "  ");
+            }
+            System.out.println("");
+        }
 
-
-
-
-
-
-
-
-
+        ///Задача 15
+        float time = 90;
+        float min = time / 60;
+        float hour = min / 60;
+        System.out.println("Часы: " + hour + " " + "Минуты: " + min + " " +  "Секунды: " + time);
+    }
 
     }
 
 
-}
+
