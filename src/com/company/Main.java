@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        ///Part1
+        /*///Part1
         ///Задача 1,2
         Scanner nm = new Scanner(System.in);
         String Name = "";
@@ -120,10 +120,48 @@ public class Main {
         }
 
         ///Задача 15
-        float time = 90;
-        float min = time / 60;
-        float hour = min / 60;
-        System.out.println("Часы: " + hour + " " + "Минуты: " + min + " " +  "Секунды: " + time);
+        int time = 9955;
+
+        System.out.println(time/ + 3600 +"Ч " + (time%3600)/60 + "М " + (time%3600)%60 + "С");
+        */
+        /// Lession 2
+        /// Задача 1
+        int plusInt = 10;
+        if (plusInt >= 0){
+            ++plusInt;
+        }
+        System.out.println(plusInt);
+
+        /// Задача 1
+        int one = 1;
+        int two = 2;
+        int change = 10;
+        int result;
+        int randomInt = 0;
+        if (randomInt > 0){
+            System.out.println(randomInt + one);
+        }
+        else if (randomInt < 0){
+            System.out.println(randomInt - two);
+        }
+        else if (randomInt == 0){
+            System.out.println(randomInt = change);
+        }
+
+
+        int a = 5;
+        int b = 5;
+        int summ;
+        if (a != b){
+            summ = a + b;
+            a = summ;
+            b = summ;
+        }
+        else if (a == b){
+            a = 0;
+            b = 0;
+        }
+        System.out.println(a + " " + b);
     }
 
     }
