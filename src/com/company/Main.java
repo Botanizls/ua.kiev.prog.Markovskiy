@@ -132,7 +132,7 @@ public class Main {
         }
         System.out.println(plusInt);
 
-        /// Задача 1
+        /// Задача 2
         int one = 1;
         int two = 2;
         int change = 10;
@@ -148,7 +148,7 @@ public class Main {
             System.out.println(randomInt = change);
         }
 
-
+        /// Задача 3
         int a = 5;
         int b = 5;
         int summ;
@@ -162,6 +162,33 @@ public class Main {
             b = 0;
         }
         System.out.println(a + " " + b);
+
+        /// Задача 4
+        int newInt = 55;
+        String StrLen;
+        StrLen = String.valueOf(newInt);
+        int NewSumm = StrLen.length();
+        if (newInt%2 == 0 && NewSumm == 3){
+            System.out.println(newInt + " - четное трехзначное число");
+        }
+        else if (newInt%2 != 0 && NewSumm == 3) {
+            System.out.println(newInt + " - нечетное трехзначное число");
+        }
+        else if (newInt%2 == 0 && NewSumm == 2){
+            System.out.println(newInt + " - четное двухзначное число");
+        }
+        else if (newInt%2 != 0 && NewSumm == 2){
+            System.out.println(newInt + " - нечетное двухзначное число");
+        }
+        else if (newInt%2 == 0 && NewSumm == 1){
+            System.out.println(newInt + " - четное одинарное число");
+        }
+        else if (newInt%2 != 0 && NewSumm == 1){
+            System.out.println(newInt + " - нечетное одинарное число");
+        }
+
+
+        ///
     }
 
     }
