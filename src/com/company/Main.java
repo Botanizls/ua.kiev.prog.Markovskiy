@@ -226,6 +226,7 @@ public class Main {
                 if (a[i] > 5) sum += a[i];
             }
         System.out.println("Сумма= " + sum);
+        //13. 19 21 25 37 38 39 40
     }
 
     }
