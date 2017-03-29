@@ -188,7 +188,17 @@ public class Main {
         }
 
 
-        ///
+        ///Задача 5
+
+        String text = "В этой4 строке3 четыре4 цифры7";
+        int count = text.replaceAll("[^\\d]","").length();
+        System.out.println(count);
+
+        ///Задача 6
+
+        String newText = "small text to big text";
+        String newBigText = newText.toUpperCase();
+        System.out.println(newBigText);
     }
 
     }
