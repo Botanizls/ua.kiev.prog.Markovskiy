@@ -1,12 +1,13 @@
 package com.company;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        /*///Part1
-        ///Задача 1,2
+        ///Part1
+        /*///Задача 1,2
         Scanner nm = new Scanner(System.in);
         String Name = "";
         System.out.println("Введите имя");
@@ -122,11 +123,11 @@ public class Main {
         ///Задача 15
         int time = 9955;
 
-        System.out.println(time/ + 3600 +"Ч " + (time%3600)/60 + "М " + (time%3600)%60 + "С");
-        */
+        System.out.println(time/ + 3600 +"Ч " + (time%3600)/60 + "М " + (time%3600)%60 + "С");*/
+
         /// Lession 2
         /// Задача 1
-        int plusInt = 10;
+        /*int plusInt = 10;
         if (plusInt >= 0){
             ++plusInt;
         }
@@ -210,6 +211,21 @@ public class Main {
         String resultNew = stringS.replaceAll(c, c + c);
         System.out.println(resultNew);
 
+
+        //--------------
+
+        int [] arrayMain = {};*/
+
+        int[] a = new int[100];
+        Random r = new Random();
+            for (int i = 0; i < a.length; i++)
+                a[i] = r.nextInt();
+                int sum = 0;
+
+            for (int i = 0; i < a.length; i++){
+                if (a[i] > 5) sum += a[i];
+            }
+        System.out.println("Сумма= " + sum);
     }
 
     }
