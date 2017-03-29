@@ -199,6 +199,17 @@ public class Main {
         String newText = "small text to big text";
         String newBigText = newText.toUpperCase();
         System.out.println(newBigText);
+
+        ///Задача 7
+        Scanner inputC = new Scanner(System.in);
+        System.out.println("Введите символ");
+        String c = inputC.nextLine();
+        Scanner inputS = new Scanner(System.in);
+        System.out.println("Введите строку");
+        String stringS = inputS.nextLine();
+        String resultNew = stringS.replaceAll(c, c + c);
+        System.out.println(resultNew);
+
     }
 
     }
