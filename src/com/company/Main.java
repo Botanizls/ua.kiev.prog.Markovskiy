@@ -240,8 +240,14 @@ public class Main {
             System.out.println(arrF[i]);
         }
         //Задача 19
-        int strCount = "1215 544 965".split(" ").length;
-        System.out.println(strCount);
+        int strCount = "вася пупкин программист".split(" ").length;
+        System.out.println("Слов в строке: " + strCount);
+        // задача 21
+        String text = "Необходимо, подсчитать, количество знаков препинани.я вне главной диагонали матрицы.";
+        int oldString = text.length();
+        int newString = text.replaceAll("[,.]", "").length();
+        System.out.println(oldString + " " + newString);
+        System.out.println("Количество знаков препинания в тексте: " + (oldString - newString));
     }
 
     }
