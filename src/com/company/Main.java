@@ -229,7 +229,7 @@ public class Main {
         //13. 19 21 25 37 38 39 40
 
         //задача 13
-        int[] arrF = new int [20];
+        /*int[] arrF = new int [20];
         for (int i = 0; i < arrF.length; i++){
             if (i < 2){
                 arrF[i] = 1;
@@ -239,16 +239,33 @@ public class Main {
             }
             System.out.println(arrF[i]);
         }
+
         //Задача 19
         int strCount = "вася пупкин программист".split(" ").length;
         System.out.println("Слов в строке: " + strCount);
+
         // задача 21
         String text = "Необходимо, подсчитать, количество знаков препинани.я вне главной диагонали матрицы.";
         int oldString = text.length();
         int newString = text.replaceAll("[,.]", "").length();
-        System.out.println(oldString + " " + newString);
         System.out.println("Количество знаков препинания в тексте: " + (oldString - newString));
+
+        //Задача 25
+        int[] arrInt = new int[2];
+        arrInt[0] = 13;
+        arrInt[1] = 31;
+        arrInt[0] = arrInt[0] + arrInt[1] - (arrInt[1] = arrInt[0]);
+        System.out.println(arrInt[0] + " " + arrInt[1]);*/
+
+        PrintNoob("Jhon", "programmer", 25);
+
+
+
     }
+
+        public static void PrintNoob (String Name, String job, int age){
+            System.out.println("Name = [" + Name + "], job = [" + job + "], age = [" + age + "]");
+        }
 
     }
 
