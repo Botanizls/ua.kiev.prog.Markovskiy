@@ -216,7 +216,7 @@ public class Main {
 
         int [] arrayMain = {};*/
 
-        int[] a = new int[100];
+        /*int[] a = new int[100];
         Random r = new Random();
             for (int i = 0; i < a.length; i++)
                 a[i] = r.nextInt();
@@ -225,8 +225,23 @@ public class Main {
             for (int i = 0; i < a.length; i++){
                 if (a[i] > 5) sum += a[i];
             }
-        System.out.println("Сумма= " + sum);
+        System.out.println("Сумма= " + sum);*/
         //13. 19 21 25 37 38 39 40
+
+        //задача 13
+        int[] arrF = new int [20];
+        for (int i = 0; i < arrF.length; i++){
+            if (i < 2){
+                arrF[i] = 1;
+            }
+            else {
+                arrF[i] = arrF[i-2] + arrF[i-1];
+            }
+            System.out.println(arrF[i]);
+        }
+        //Задача 19
+        int strCount = "1215 544 965".split(" ").length;
+        System.out.println(strCount);
     }
 
     }
