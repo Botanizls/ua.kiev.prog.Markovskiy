@@ -1,7 +1,14 @@
 package com.company;
 
+import javax.swing.*;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.time.Instant;
+import java.time.temporal.ChronoUnit;
+import java.util.Date;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.TimeZone;
 
 public class Main {
 
@@ -245,7 +252,7 @@ public class Main {
         System.out.println("Слов в строке: " + strCount);
 
         // задача 21
-        String text = "Необходимо, подсчитать, количество знаков препинани.я вне главной диагонали матрицы.";
+        String text = "Необходимо, подсчитать, количетво знаков препинани.я вне главной диагонали матрицы.";
         int oldString = text.length();
         int newString = text.replaceAll("[,.]", "").length();
         System.out.println("Количество знаков препинания в тексте: " + (oldString - newString));
@@ -255,16 +262,26 @@ public class Main {
         arrInt[0] = 13;
         arrInt[1] = 31;
         arrInt[0] = arrInt[0] + arrInt[1] - (arrInt[1] = arrInt[0]);
-        System.out.println(arrInt[0] + " " + arrInt[1]);*/
+        System.out.println(arrInt[0] + " " + arrInt[1]); */
 
-        PrintNoob("Jhon", "programmer", 25);
+        printNoob("Jhon", "programmer", 25);
 
-
+        Instant previous = Instant.now();
+        int i = 0;
+        while (i<=5){
+            JOptionPane.showInputDialog("What`s your name");
+            i++;
+        }
+        Instant current = Instant.now();
+        System.out.println(ChronoUnit.SECONDS.between(previous,current)+ " seconds");
 
     }
 
-        public static void PrintNoob (String Name, String job, int age){
+        public static void printNoob (String Name, String job, int age){
             System.out.println("Name = [" + Name + "], job = [" + job + "], age = [" + age + "]");
+
+
+
         }
 
     }
